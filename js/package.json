@@ -17,9 +17,7 @@
     "build-tsc": "tsc --declaration --emitDeclarationOnly --outdir dist",
     "build": "pnpm run build-iife && pnpm run build-esm && pnpm run build-cjs && pnpm run build-tsc",
     "test": "node -r esbuild-runner/register test/index.test.ts",
-    "tsc": "tsc --noEmit --watch",
-    "prettier": "prettier --write *.ts test/*.ts",
-    "prettier-check": "prettier --check *.ts test/*.ts"
+    "tsc": "tsc --noEmit --watch"
   },
   "homepage": "https://github.com/protomaps/pmtiles",
   "author": "Brandon Liu",
@@ -28,10 +26,10 @@
     "@types/node": "^18.11.9",
     "esbuild": "^0.15.11",
     "esbuild-runner": "^2.2.1",
-    "prettier": "^2.8.4",
     "typescript": "^4.5.5"
   },
   "dependencies": {
+    "biome": "^0.3.3",
     "fflate": "^0.8.0"
   }
 }
