@@ -1,2 +1,2 @@
-import "./v2.test";
-import "./v3.test";
+import "./v2.test.js";
+import "./v3.test.js";
